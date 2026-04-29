@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="All Rosa Confeitaria — links e canais de atendimento">
+  <title>All Rosa · Links</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;1,9..144,300&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --framboesa: #D94A7C;
+      --bordo: #3A1820;
+      --creme: #F5E0C6;
+    }
+
+    body {
+      background-color: var(--bordo);
+      background-image: radial-gradient(ellipse at 50% -5%, rgba(217,74,124,0.22) 0%, transparent 58%);
+      color: var(--creme);
+      font-family: 'Manrope', sans-serif;
+      min-height: 100dvh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2.5rem 1.25rem;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+      animation: fadeUp 0.5s ease both;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .logo-wrap {
+      display: inline-block;
+      border-radius: 28px;
+      overflow: hidden;
+      margin-bottom: 2rem;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.35);
+    }
+
+    .logo-wrap img {
+      width: 168px;
+      height: 168px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .link-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.9rem 1.5rem;
+      background: rgba(217,74,124,0.1);
+      border: 1px solid rgba(217,74,124,0.3);
+      border-radius: 100px;
+      color: var(--creme);
+      text-decoration: none;
+      font-family: 'Manrope', sans-serif;
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      transition: background 0.2s ease, border-color 0.2s ease, transform 0.15s ease, color 0.2s ease;
+    }
+
+    .link-btn:hover {
+      background: var(--framboesa);
+      border-color: var(--framboesa);
+      color: #fff;
+      transform: translateY(-2px);
+    }
+
+    .link-btn:active {
+      transform: translateY(0);
+    }
+
+    .footer {
+      margin-top: 2.75rem;
+      font-size: 0.65rem;
+      color: rgba(245,224,198,0.28);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo-wrap">
+      <img src="logo.png" alt="All Rosa Confeitaria">
+    </div>
+
+    <div class="links">
+      <a href="https://www.instagram.com/allrosaconfeitaria" class="link-btn" target="_blank" rel="noopener noreferrer">
+        Instagram
+      </a>
+      <a href="https://wa.me/5535988442995" class="link-btn" target="_blank" rel="noopener noreferrer">
+        WhatsApp — Encomendas
+      </a>
+      <a href="https://allrosa.com.br" class="link-btn" target="_blank" rel="noopener noreferrer">
+        Site
+      </a>
+    </div>
+
+    <p class="footer">© 2025 All Rosa Confeitaria</p>
+  </div>
+</body>
+</html>
